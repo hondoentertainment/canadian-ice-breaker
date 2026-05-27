@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="15 ice breaker questions for your Canadian Tuxedo Party — denim on denim, maple syrup vibes, and good conversation.">
+  <title>Canadian Tuxedo Party · Ice Breakers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="hero">
+    <div class="hero__badge">🍁 Party Edition</div>
+    <h1 class="hero__title">
+      <span class="hero__title-line">Canadian Tuxedo</span>
+      <span class="hero__title-line hero__title-line--accent">Ice Breakers</span>
+    </h1>
+    <p class="hero__subtitle">
+      Fifteen conversation starters for a denim-on-denim night.
+      Pick one, shuffle the deck, or go around the room — eh?
+    </p>
+    <div class="hero__actions">
+      <button type="button" class="btn btn--primary" id="random-btn">
+        <span class="btn__icon" aria-hidden="true">🎲</span>
+        Random Question
+      </button>
+      <button type="button" class="btn btn--secondary" id="shuffle-btn">
+        <span class="btn__icon" aria-hidden="true">🔀</span>
+        Shuffle All
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="spotlight" id="spotlight" aria-live="polite" aria-atomic="true" hidden>
+      <p class="spotlight__label">Tonight's pick</p>
+      <blockquote class="spotlight__quote" id="spotlight-text"></blockquote>
+      <p class="spotlight__number" id="spotlight-number"></p>
+    </section>
+
+    <section class="questions" aria-labelledby="questions-heading">
+      <div class="questions__header">
+        <h2 id="questions-heading">All 15 Questions</h2>
+        <p class="questions__hint">Tap a card to highlight it for the group.</p>
+      </div>
+      <ol class="question-grid" id="question-grid"></ol>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Wear your denim with pride. Stay warm, stay polite, stay legendary.</p>
+    <p class="footer__small">Canadian Tuxedo Party · Ice Breaker Deck</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
