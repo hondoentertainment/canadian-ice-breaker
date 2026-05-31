@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="15 ice breaker questions for your Canadian Tuxedo Party — denim-themed laughs mixed with classic party conversation starters.">
+  <meta name="description" content="15 ice breaker questions for your Canadian Tuxedo Party — gather your group and start the conversation.">
   <title>Canadian Tuxedo Party · Ice Breakers</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,57 +13,36 @@
 <body>
   <div class="grain" aria-hidden="true"></div>
 
-  <header class="hero">
-    <div class="hero__badge">🍁 Party Edition</div>
-    <h1 class="hero__title">
-      <span class="hero__title-line">Canadian Tuxedo</span>
-      <span class="hero__title-line hero__title-line--accent">Ice Breakers</span>
-    </h1>
-    <p class="hero__subtitle">
-      Fifteen conversation starters for the party.
-      Pick one, shuffle the deck, or go around the room — eh?
-    </p>
-    <div class="hero__actions">
-      <button type="button" class="btn btn--primary" id="random-btn">
-        <span class="btn__icon" aria-hidden="true">🎲</span>
-        Random Question
-      </button>
-      <button type="button" class="btn btn--secondary" id="shuffle-btn">
-        <span class="btn__icon" aria-hidden="true">🔀</span>
-        Shuffle All
-      </button>
-    </div>
+  <div class="page">
+    <header class="site-header">
+      <p class="site-header__badge">🍁 Party Edition</p>
+      <h1 class="site-header__title">
+        <span>Canadian Tuxedo</span>
+        <span class="site-header__title-accent">Ice Breakers</span>
+      </h1>
+    </header>
 
-    <section class="instructions" aria-labelledby="instructions-heading">
-      <h2 class="instructions__heading" id="instructions-heading">How to play</h2>
-      <ol class="instructions__list">
-        <li>Pick a question — random, from the board, or go in order.</li>
-        <li>Gather a small group of 3–5 people and read the question out loud.</li>
-        <li>Give everyone a turn to answer. Listen, laugh, follow the tangents.</li>
-        <li>When you're ready for a fresh mix, break into new groups and pick again.</li>
-      </ol>
-    </section>
-  </header>
+    <main class="content">
+      <section class="instructions" aria-labelledby="instructions-heading">
+        <h2 class="section-heading" id="instructions-heading">How to play</h2>
+        <ol class="instructions__list">
+          <li>Pick a question from the list below.</li>
+          <li>Gather a small group of 3–5 people and read the question out loud.</li>
+          <li>Give everyone a turn to answer. Listen, laugh, follow the tangents.</li>
+          <li>When you're ready for a fresh mix, break into new groups and pick again.</li>
+        </ol>
+      </section>
 
-  <main>
-    <section class="spotlight" id="spotlight" aria-live="polite" aria-atomic="true" hidden>
-      <p class="spotlight__label">Tonight's pick</p>
-      <blockquote class="spotlight__quote" id="spotlight-text"></blockquote>
-      <p class="spotlight__number" id="spotlight-number"></p>
-    </section>
+      <section class="questions" aria-labelledby="questions-heading">
+        <h2 class="section-heading" id="questions-heading">Questions</h2>
+        <ol class="question-grid" id="question-grid"></ol>
+      </section>
+    </main>
 
-    <section class="questions" aria-labelledby="questions-heading">
-      <div class="questions__header">
-        <h2 id="questions-heading">All 15 Questions</h2>
-        <p class="questions__hint">Tap a card to highlight it for the group.</p>
-      </div>
-      <ol class="question-grid" id="question-grid"></ol>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p class="footer__small">Canadian Tuxedo Party · Ice Breaker Deck</p>
-  </footer>
+    <footer class="footer">
+      <p>Canadian Tuxedo Party · Ice Breaker Deck</p>
+    </footer>
+  </div>
 
   <script src="app.js"></script>
 </body>
